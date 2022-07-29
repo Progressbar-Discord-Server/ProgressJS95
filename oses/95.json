@@ -1,0 +1,10 @@
+{
+  "name": "Progressbar 95",
+  "shortName": "95",
+  "proLevel": 10,
+  "unlockLevel": 0,
+  "systemUnlock": "95plus",
+  "requiredString": "",
+  "listInBootMenu": 1,
+  "startupString": "9 5"
+}
