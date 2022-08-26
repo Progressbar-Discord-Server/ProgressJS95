@@ -1,6 +1,22 @@
 {
   "$schema": "format.json",
   "code": "en_US",
-  "sparow": "Sparros Assistant Enhanced Text BIOS.80.1 -",
-  "energyStar": "Energy Star (un)Powered"
+  "langDescription": "English",
+  "sparow": "Sparrow Assistant Enhanced Text BIOS.80.1",
+  "energyStar": "Energy Star (un)Powered",
+  "jsVer": "JS ver.",
+  "compiled": "compiled {m}/{d}/{y}",
+  "dev": "- DEVELOPMENT BUILD // BUGS MAY BE COMMON -",
+  "loading": "Now loading...",
+  "beginMenu": "B e g i n  M e n u",
+  "newGame": "New Game",
+  "restart": "Restart",
+  "settings": "Settings",
+  "shutdown": "Shutdown",
+  "error": "An error occured, Exiting...",
+  "livesLeft": "You have {lives} lives left.",
+  "bar": "Your bar:",
+  "progreHave": "You have {%}% in your progressbar",
+  "instruction": "Type 'c' to catch, any other key to move away, and 'q' to quit.",
+  "level": "Level"
 }

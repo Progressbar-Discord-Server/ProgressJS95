@@ -1,8 +1,8 @@
 {
   "name": "progressjs95",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
-  "main": "main.js",
+  "main": "boot.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,8 +13,8 @@
   "dependencies": {
     "chalk": "^5.0.1",
     "chalk-animation": "^2.0.2",
-    "figlet": "^1.5.2",
     "gradient-string": "^2.0.1",
-    "inquirer": "^9.0.2"
+    "inquirer": "^9.0.2",
+    "table": "^6.8.0"
   }
 }

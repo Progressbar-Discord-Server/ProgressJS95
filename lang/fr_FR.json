@@ -1,4 +1,11 @@
 {
   "$schema": "format.json",
-  "code": "fr_FR"
+  "code": "fr_FR",
+  "langDescription": "Français",
+  "sparow": "Sparrow Assistant Enhanced Text BIOS.80.1",
+  "energyStar": "Energy Star (un)Powered",
+  "jsVer": "JS ver.",
+  "compiled": "compilé le {d}/{m}/{y}",
+  "dev": "- BUILD DE DÉVELOPEMENT // LES BUG PEUVENT ÊTRE COMMUN -",
+  "loading": "Chargement..."
 }

@@ -1,4 +1,5 @@
 {
+  "$schema": "format.json",
   "name": "Progressbar 95",
   "shortName": "95",
   "proLevel": 10,
