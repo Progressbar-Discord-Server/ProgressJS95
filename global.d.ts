@@ -1,11 +1,6 @@
-export interface system {
+export interface save {
   "score": number,
   "highscore": number
-}
-
-export interface os {
-  "95": system,
-  "98": system
 }
 
 export interface oses {
@@ -16,7 +11,13 @@ export interface oses {
   "systemUnlock": string,
   "requiredString": string,
   "listInBootMenu": number,
-  "startupString": string
+  "startupString": string,
+  "save": save
+}
+
+export interface os {
+  "95": oses,
+  "98": oses
 }
 
 export interface lang {
