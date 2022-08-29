@@ -11,8 +11,8 @@ const dev = 1
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const osesFolder = fs.readdirSync(`${__dirname}/oses/`);
-let oses = []
-let osesName = []
+let oses: Record<string, unknown>[] = []
+let osesName: string[] = []
 for (const file of osesFolder) {
   if (file === "format.json") continue;
   const { default: os } = await import(`${__dirname}/oses/${file}`, { assert: { type: 'json' } });
@@ -21,7 +21,7 @@ for (const file of osesFolder) {
 }
 
 const langFolder = fs.readdirSync(`${__dirname}/lang/`);
-let langCode = []
+let langCode: string[] = []
 
 for (const file of langFolder) {
   if (file === "format.json" || file === "test.json") continue;
@@ -44,8 +44,8 @@ let langChosen = await inquirer.prompt({
 console.clear()
 let { default: lang } = await import(`${__dirname}/lang/${langChosen.lang.split("  ")[0]}.json`, { assert: { type: "json" } })
 
-let os
-async function main() {
+let os: object
+async function main(): Promise<any> {
   let devPass = 0
   while (devPass !== 1) {
     if (dev) devPass = 1
@@ -60,7 +60,7 @@ async function main() {
       choices: osesName
     });
 
-    oses.forEach(e => { if (e.name === osChoice.os) { return os = e } })
+    oses.forEach(e => { if (e.name === osChoice.os) { os = e } })
     console.log()
     // console.clear();
     await startUp(os, lang, /*save*/)

@@ -1,0 +1,43 @@
+{
+  "$id": "oses",
+  "title": "oses",
+  "description": "A properties for oses json file",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The name of the os",
+      "type": "string"
+    },
+    "shortName": {
+      "description": "The short name of the os",
+      "type": "string"
+    },
+    "proLevel": {
+      "description": "The number of level for being a pro",
+      "type": "integer"
+    },
+    "unlockLevel": {
+      "description": "",
+      "type": "integer"
+    },
+    "systemUnlock": {
+      "description": "",
+      "type": "string"
+    },
+    "requiredString": {
+      "description": "",
+      "type": "string"
+    },
+    "listInBootMenu": {
+      "description": "The place to show it in the list",
+      "type": "integer",
+      "minimum": 0,
+      "exclusiveMinimum": true
+    },
+    "startupString": {
+      "description": "The startup string of the os",
+      "type": "string"
+    }
+  },
+  "required": [ "name", "shortName", "proLevel", "unlockLevel", "requiredString", "systemUnlock", "listInBootMenu", "startupString" ]
+}

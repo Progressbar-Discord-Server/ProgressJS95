@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "outDir": "./src",
+    "rootDir": "./src",
+    "baseUrl": "./src"
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "global.d.ts"
+  ]
+}
